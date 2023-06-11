@@ -14,6 +14,7 @@ class RepositoryServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind('App\Interfaces\UserRepoInterface', 'App\Repository\UserRepository');
+        $this->app->bind('App\Interfaces\KendaraanRepoInterface', 'App\Repository\KendaraanRepository');
     }
 
     /**
